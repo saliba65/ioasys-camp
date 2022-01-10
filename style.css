@@ -10,6 +10,12 @@
 body {
   font-size: 100%;
   /* background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%); */
+  background: linear-gradient(
+    54.13deg,
+    #010101 25.55%,
+    #00192f 72.7%,
+    #002c3f 106.21%
+  );
 }
 
 .cabecalho {
