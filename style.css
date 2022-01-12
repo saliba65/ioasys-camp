@@ -42,7 +42,7 @@ body {
 }
 
 .header-menu-item:hover {
-  border-bottom: 1px solid #ffff;
+  border-bottom: 1.5px solid #ffff;
 }
 
 .main-div {
@@ -96,31 +96,48 @@ body {
   background-color: transparent;
 }
 
-.main-image {
-  margin-top: 80px;
-  height: 380px;
+.div-image {
+  display: flex;
+  flex-direction: column;
 }
-/* 
-.item-image {
-  will-change: transform;
-  -webkit-animation-name: features_image;
-  animation-name: features_image;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
-  animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
-} */
+
+.div-rocketman {
+  animation: move 4s ease infinite;
+}
+
+@keyframes move {
+  50% {
+    transform: translate(0px, 30px);
+  }
+}
+
+.main-image {
+  height: 370px;
+  margin-top: 50px;
+}
+
+.div-base {
+  /* animation: rotate 4s ease infinite; */
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.base-image {
+  margin-left: 50px;
+  margin-top: -35px;
+  margin-bottom: 50px;
+}
 
 .secondary-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin-top: 48px;
+  margin-top: 50px;
 }
 
 .secondary-content-title {
