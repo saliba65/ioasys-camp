@@ -78,6 +78,9 @@ body {
 }
 
 .main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #e00f63;
   width: 180px;
   height: 60px;
@@ -117,7 +120,8 @@ body {
 }
 
 .div-base {
-  /* animation: rotate 4s ease infinite; */
+  transform: rotate(-3deg);
+  animation: rotate 4s ease infinite;
 }
 
 @keyframes rotate {
